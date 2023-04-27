@@ -1,0 +1,181 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body >main{
+     background-image: url(../restaurantImages/brooke-lark-08bOYnH_r_E-unsplash.jpg);
+     height: 625px;
+     /* background-position: center; */
+     background-size: 100% 100%;
+}
+body >section{
+     height: 625px;
+}
+body >section> div{
+     float: left;
+}
+body >section> div:first-of-type{
+     background-image: url(../restaurantImages/brooke-lark-pie.jpg);
+     background-size: 100% 100%;
+     height: 100%;
+     width: 30%;
+     background-position: 88% 0;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+body >section> div+div{
+     background: rgb(250,250,252);
+     background-image: url(../restaurantImages/olga-kudriavtseva-s8J1DlRroo0-unsplash.jpg);
+     background-size: 46% 100%;
+     height: 100%;
+     width: 70%;
+     background-position: 100% 20%;
+     background-repeat: no-repeat;
+     padding: 5%;
+}
+body >section> div+div span{
+     color: rgb(255,136,0);
+}
+body >section> div+div a{
+     background: rgb(255,136,0);
+     text-decoration: none;
+     color: white;
+     padding: 1% 2%;
+}
+body >section> div+div h1,body >section> div+div p{
+     width: 70%;
+     line-height: 2;
+}
+body >section> div+div p{
+     margin-bottom: 8%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav >*{
+     float: left;
+     width: 50%;
+}
+header nav img {
+     width: 10%;
+     margin: auto 7%;
+}
+header nav ul{
+     list-style: none;
+     margin-left:23%;
+     margin-top: 0;
+     padding: 0;
+}
+header nav ul li  {
+     float: left;
+     padding: 3%;
+}
+header nav ul li a {
+     text-decoration: none;
+     color: black;
+}
+main div {
+     width: 50%;
+     padding: 5% 15%;
+}
+main div h1{
+     font-size: 50px;
+     width: 400px;
+
+}
+main div >div {
+     position: relative;
+     padding: 2%;
+     width: 400px;
+}
+main div >div a{
+     color: white;
+     text-decoration: none;
+     background: rgb(255,136,0);
+     padding: 2.5% 2%;
+     margin-left: -1%;
+}
+main div >div input{
+     width: 81%;
+     border: 1px solid grey;
+     padding: 2% 7%;
+}
+main div >div i{
+     position: absolute;
+     padding: 2%;
+     opacity: 0.5;
+}
+main >div >section{
+     float: left;
+     width: 33.3333%;
+}
+main >div >section *{
+     padding: 5%;
+}
+main >div >section i{
+     color: rgb(255,136,0);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body > section + section{
+     text-align: center;
+     padding-top: 5%;
+}
+body > section + section article section{
+     float: left;
+     width: 25%;
+}
+.container{
+     margin: 8% 5%;
+}
+body > section + section article section img{
+     /* margin-left: 18%; */
+     max-width: 100%;
+}
+body > section + section ul{
+     list-style: none;
+     margin-left: 32%;
+     /* border-bottom: 2px solid bl; */
+}
+body > section + section ul li {
+     float: left;
+     padding: 0 2%;
+}
+body > section + section ul li a{
+     text-decoration: none;
+     color: black;
+}
+body > section + section ul li a:hover{
+     color: rgb(255,136,0);
+
+}
+body > section + section> a{
+     text-decoration: none;
+     color: rgb(255,136,0);
+
+}
+body > section + section> h3{
+     font-size: 2.5em;
+     margin-top: 0;
+}
